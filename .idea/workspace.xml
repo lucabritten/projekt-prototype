@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="38ee6c79-f17d-4b7c-b5b5-7bb7d8b95bdc" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;lucabritten&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/lucabritten/projekt-prototype.git&quot;,
+    &quot;accountId&quot;: &quot;de15eb9a-1b78-420f-bd0f-f884ff081d32&quot;
+  }
+}</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="371zLFNUnwnX1nYG70g9ckiVdlp" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="openDirectoriesWithSingleClick" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.App (2).executor&quot;: &quot;Run&quot;,
+    &quot;Application.App.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JooqDriverRepositoryTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JooqDriverRepositoryTest.shouldSaveAndFindDriver.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JooqDriverRepositoryTest.shouldSaveMultipleDrivers.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LapsCommandTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LapsCommandTest.shouldExecuteLapsCommand.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.OpenF1ClientTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.OpenF1ClientTest.shouldReturnDriverByNumber.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlite&quot;
+    ]
+  }
+}</component>
+  <component name="RunManager" selected="Application.App">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.britten.App" />
+      <module name="httpprac" />
+      <option name="PROGRAM_PARAMETERS" value="laps compare --country Netherlands --year 2025 --session Race --drivers 1,4,63,44" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.britten.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.britten.App" />
+      <module name="httpprac" />
+      <option name="PROGRAM_PARAMETERS" value="laps compare --country Austria --year 2025 --session Race --drivers 1,4,55,44" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.britten.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JooqDriverRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="httpprac" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.britten.infrastructure.db.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.britten.infrastructure.db" />
+      <option name="MAIN_CLASS_NAME" value="com.britten.infrastructure.db.JooqDriverRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JooqDriverRepositoryTest.shouldSaveAndFindDriver" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="httpprac" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.britten.infrastructure.db.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.britten.infrastructure.db" />
+      <option name="MAIN_CLASS_NAME" value="com.britten.infrastructure.db.JooqDriverRepositoryTest" />
+      <option name="METHOD_NAME" value="shouldSaveAndFindDriver" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JooqDriverRepositoryTest.shouldSaveMultipleDrivers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="httpprac" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.britten.infrastructure.db.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.britten.infrastructure.db" />
+      <option name="MAIN_CLASS_NAME" value="com.britten.infrastructure.db.JooqDriverRepositoryTest" />
+      <option name="METHOD_NAME" value="shouldSaveMultipleDrivers" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LapsCommandTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="httpprac" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.britten.cli.laps.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.britten.cli" />
+      <option name="MAIN_CLASS_NAME" value="com.britten.cli.LapsCommandTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.App" />
+      <item itemvalue="JUnit.JooqDriverRepositoryTest" />
+      <item itemvalue="JUnit.JooqDriverRepositoryTest.shouldSaveMultipleDrivers" />
+      <item itemvalue="JUnit.LapsCommandTest" />
+      <item itemvalue="JUnit.JooqDriverRepositoryTest.shouldSaveAndFindDriver" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.App" />
+        <item itemvalue="JUnit.JooqDriverRepositoryTest" />
+        <item itemvalue="JUnit.JooqDriverRepositoryTest.shouldSaveMultipleDrivers" />
+        <item itemvalue="JUnit.LapsCommandTest" />
+        <item itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.29188.11" />
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-IU-251.29188.11" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="38ee6c79-f17d-4b7c-b5b5-7bb7d8b95bdc" name="Changes" comment="" />
+      <created>1738577926171</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1738577926171</updated>
+      <workItem from="1766085309633" duration="30503000" />
+      <workItem from="1766505587472" duration="2228000" />
+      <workItem from="1766581933616" duration="785000" />
+      <workItem from="1766859947870" duration="25634000" />
+      <workItem from="1767191046279" duration="9347000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

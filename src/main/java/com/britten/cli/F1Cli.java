@@ -1,5 +1,6 @@
 package com.britten.cli;
 
+import com.britten.cli.laps.LapsCommand;
 import picocli.CommandLine;
 
 /**

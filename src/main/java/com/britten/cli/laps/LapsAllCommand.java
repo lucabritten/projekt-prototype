@@ -1,4 +1,4 @@
-package com.britten.cli;
+package com.britten.cli.laps;
 
 import com.britten.domain.Lap;
 import com.britten.domain.SessionType;
@@ -35,7 +35,7 @@ public class LapsAllCommand implements Runnable{
 
     @Override
     public void run() {
-        List<Lap> laps = client.getLapsForSession(country, year, driverNumber, SessionType.RACE);
+        List<Lap> laps = client.getLapsForSession(country, year, driverNumber, SessionType.Race);
         System.out.println(LapsFormatter.format(laps));
     }
 }
