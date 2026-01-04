@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38ee6c79-f17d-4b7c-b5b5-7bb7d8b95bdc" name="Changes" comment="" />
+    <list default="true" id="38ee6c79-f17d-4b7c-b5b5-7bb7d8b95bdc" name="Changes" comment="Migrate project to Spring Boot framework:  &#10;- Replace custom dependency injection with Spring annotations (`@Component`, `@Service`, `@Repository`).  &#10;- Update `pom.xml` to add Spring Boot dependencies and plugin configuration.  &#10;- Remove `ApplicationContext`, integrate Spring’s application context management.  &#10;- Adjust command classes and services to leverage Spring's DI.  &#10;- Modify `App` class for Spring Boot initialization.  &#10;- Add IntelliJ IDEA project configuration files.">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/britten/cli/F1Cli.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/britten/cli/F1Cli.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,6 +39,9 @@
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -214,5 +219,9 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Migrate project to Spring Boot framework:  &#10;- Replace custom dependency injection with Spring annotations (`@Component`, `@Service`, `@Repository`).  &#10;- Update `pom.xml` to add Spring Boot dependencies and plugin configuration.  &#10;- Remove `ApplicationContext`, integrate Spring’s application context management.  &#10;- Adjust command classes and services to leverage Spring's DI.  &#10;- Modify `App` class for Spring Boot initialization.  &#10;- Add IntelliJ IDEA project configuration files." />
+    <option name="LAST_COMMIT_MESSAGE" value="Migrate project to Spring Boot framework:  &#10;- Replace custom dependency injection with Spring annotations (`@Component`, `@Service`, `@Repository`).  &#10;- Update `pom.xml` to add Spring Boot dependencies and plugin configuration.  &#10;- Remove `ApplicationContext`, integrate Spring’s application context management.  &#10;- Adjust command classes and services to leverage Spring's DI.  &#10;- Modify `App` class for Spring Boot initialization.  &#10;- Add IntelliJ IDEA project configuration files." />
   </component>
 </project>
