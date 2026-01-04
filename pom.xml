@@ -96,6 +96,11 @@
       <artifactId>mockwebserver</artifactId>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>org.jfree</groupId>
+      <artifactId>jfreechart</artifactId>
+      <version>1.5.4</version>
+    </dependency>
   </dependencies>
 
   <build>

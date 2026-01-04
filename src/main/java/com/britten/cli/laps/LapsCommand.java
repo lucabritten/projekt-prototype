@@ -1,4 +1,4 @@
-package com.britten.cli;
+package com.britten.cli.laps;
 
 import org.springframework.stereotype.Component;
 import picocli.CommandLine;
@@ -10,7 +10,8 @@ import picocli.CommandLine;
         mixinStandardHelpOptions = true,
         subcommands = {
                 LapsAllCommand.class,
-                LapsFastestCommand.class
+                LapsFastestCommand.class,
+                LapsCompareCommand.class
         }
 )
 public class LapsCommand{

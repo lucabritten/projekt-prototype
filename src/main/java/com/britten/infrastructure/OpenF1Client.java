@@ -1,13 +1,7 @@
 package com.britten.infrastructure;
 
-import com.britten.domain.Driver;
-import com.britten.domain.Lap;
-import com.britten.domain.Session;
-import com.britten.domain.SessionType;
-import com.britten.infrastructure.api.dto.DriverApiDto;
-import com.britten.infrastructure.api.dto.LapApiDto;
-import com.britten.infrastructure.api.dto.MeetingApiDto;
-import com.britten.infrastructure.api.dto.SessionApiDto;
+import com.britten.domain.*;
+import com.britten.infrastructure.api.dto.*;
 import com.britten.util.Mapper;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import okhttp3.OkHttpClient;
@@ -62,6 +56,18 @@ public class OpenF1Client {
                 .toList();
     }
 
+    public Session getSessionByMeetingKeyAndType(int meetingKey, SessionType type){
+        String url = BASE_URL + "/sessions?meeting_key=" + meetingKey;
+
+        List<SessionApiDto> dtos = fetchList(url, SessionApiDto[].class);
+
+        return dtos.stream()
+                .filter(s -> s.session_type().contains(type.name()))
+                .findFirst()
+                .map(Mapper::toSession)
+                .orElse(null);
+    }
+
     public List<Lap> getLapsForSession(String countryName, int year, int driverNumber, SessionType type){
         List<Session> sessions = getSessionsByNameAndYear(countryName,year);
 
@@ -86,6 +92,17 @@ public class OpenF1Client {
         String url = BASE_URL + "/meetings?year=" + year + "&country_name=" + countryName;
 
         return fetchSingle(url, MeetingApiDto[].class);
+    }
+
+    public Meeting getMeetingByNameAndYear(String countryName, int year){
+        return Mapper.toMeeting(getMeetingDtoByNameAndYear(countryName, year));
+    }
+
+    public List<Lap> fetchLaps(int sessionKey){
+        String url = BASE_URL + "/laps?session_key=" + sessionKey;
+        return fetchList(url, LapApiDto[].class).stream()
+                .map(Mapper::toLap)
+                .toList();
     }
 
     private <T> List<T> fetchList(String url, Class<T[]> arrayType){
@@ -115,6 +132,13 @@ public class OpenF1Client {
             throw new RuntimeException("No result.");
 
         return result.get(0);
+    }
+
+    public List<WeatherSample> fetchWeatherData(int sessionKey){
+        String url = BASE_URL + "/weather?session_key=" + sessionKey;
+        return fetchList(url, WeatherApiDto[].class).stream()
+                .map(Mapper::toWeatherSample)
+                .toList();
     }
 
 }

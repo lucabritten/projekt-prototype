@@ -1,5 +1,6 @@
 package com.britten.cli;
 
+import com.britten.cli.laps.LapsAllCommand;
 import com.britten.domain.Lap;
 import com.britten.domain.SessionType;
 import com.britten.infrastructure.OpenF1Client;
@@ -24,11 +25,11 @@ public class LapsCommandTest {
                         "Austria",
                         2025,
                         1,
-                        SessionType.RACE
+                        SessionType.Race
                 )
         ).thenReturn(List.of(
-                new Lap(1, 83.4f, 1),
-                new Lap(1, 84.2f,2)
+                new Lap(1, 83.4f, 1, 1234),
+                new Lap(1, 84.2f,2, 1234)
         ));
         LapsAllCommand command = new LapsAllCommand(fakeClient);
 

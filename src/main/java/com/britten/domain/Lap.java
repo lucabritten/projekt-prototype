@@ -1,4 +1,4 @@
 package com.britten.domain;
 
-public record Lap (int driverNumber, float duration, int lapNumber){
+public record Lap (int driverNumber, float duration, int lapNumber, int sessionKey){
 }

@@ -1,4 +1,4 @@
-package com.britten.cli;
+package com.britten.cli.laps;
 
 import com.britten.domain.Lap;
 import com.britten.domain.SessionType;
@@ -60,7 +60,7 @@ public class LapsFastestCommand implements Runnable{
                 country,
                 year,
                 driverNumber,
-                SessionType.RACE
+                SessionType.Race
         );
 
         laps.stream()
