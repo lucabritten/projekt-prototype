@@ -8,9 +8,10 @@ import com.britten.infrastructure.OpenF1Client;
 import com.britten.repository.LapRepository;
 import com.britten.service.MeetingService;
 import com.britten.service.SessionService;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public class LapsService{
 
     private final OpenF1Client client;

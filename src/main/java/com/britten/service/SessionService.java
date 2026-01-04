@@ -4,7 +4,9 @@ import com.britten.domain.Session;
 import com.britten.domain.SessionType;
 import com.britten.infrastructure.OpenF1Client;
 import com.britten.repository.SessionRepository;
+import org.springframework.stereotype.Service;
 
+@Service
 public class SessionService {
 
     private final SessionRepository repository;

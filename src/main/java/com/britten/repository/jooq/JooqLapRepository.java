@@ -9,9 +9,11 @@ import java.util.List;
 import java.util.Optional;
 
 import com.britten.repository.LapRepository;
+import org.springframework.stereotype.Repository;
 
 import static com.britten.jooq.tables.Laps.LAPS;
 
+@Repository
 public class JooqLapRepository implements LapRepository {
 
     private final DSLContext context;

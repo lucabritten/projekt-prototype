@@ -3,11 +3,12 @@ package com.britten.repository.jooq;
 import com.britten.domain.Meeting;
 import com.britten.repository.MeetingRepository;
 import org.jooq.DSLContext;
+import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
 
 import static com.britten.jooq.tables.Meetings.MEETINGS;
-
+@Repository
 public class JooqMeetingRepository implements MeetingRepository {
 
     private final DSLContext context;

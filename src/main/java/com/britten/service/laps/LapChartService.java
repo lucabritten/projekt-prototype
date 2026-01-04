@@ -11,12 +11,14 @@ import org.jfree.chart.renderer.xy.XYLineAndShapeRenderer;
 import org.jfree.data.xy.XYDataset;
 import org.jfree.data.xy.XYSeries;
 import org.jfree.data.xy.XYSeriesCollection;
+import org.springframework.stereotype.Service;
 
 import java.awt.*;
 import java.io.File;
 import java.util.List;
 import java.util.Map;
 
+@Service
 public class LapChartService {
 
     public void generateSingleDriverChart(

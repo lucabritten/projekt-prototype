@@ -3,12 +3,14 @@ package com.britten.repository.jooq;
 import com.britten.domain.SessionWeatherData;
 import com.britten.repository.WeatherRepository;
 import org.jooq.DSLContext;
+import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
 
 import static com.britten.jooq.tables.Weather.*;
 import static org.jooq.impl.DSL.asterisk;
 
+@Repository
 public class JooqWeatherRepository implements WeatherRepository {
 
     private DSLContext context;

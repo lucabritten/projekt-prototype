@@ -4,11 +4,12 @@ import com.britten.domain.Session;
 import com.britten.domain.SessionType;
 import com.britten.repository.SessionRepository;
 import org.jooq.DSLContext;
+import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
 
 import static com.britten.jooq.tables.Sessions.*;
-
+@Repository
 public class JooqSessionRepository implements SessionRepository {
 
     private final DSLContext context;

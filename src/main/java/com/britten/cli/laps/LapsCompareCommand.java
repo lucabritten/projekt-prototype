@@ -4,13 +4,14 @@ import com.britten.domain.Lap;
 import com.britten.domain.SessionType;
 import com.britten.service.laps.LapChartService;
 import com.britten.service.laps.LapsService;
+import org.springframework.stereotype.Component;
 import picocli.CommandLine;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
+@Component
 @CommandLine.Command(name = "compare")
 public class LapsCompareCommand implements Runnable{
 

@@ -4,9 +4,10 @@ import com.britten.domain.SessionWeatherData;
 import com.britten.domain.WeatherSample;
 import com.britten.infrastructure.OpenF1Client;
 import com.britten.repository.WeatherRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public class WeatherDataService {
 
     private final WeatherRepository weatherRepository;

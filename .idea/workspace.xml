@@ -4,8 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38ee6c79-f17d-4b7c-b5b5-7bb7d8b95bdc" name="Changes" comment="Migrate project to Spring Boot framework:  &#10;- Replace custom dependency injection with Spring annotations (`@Component`, `@Service`, `@Repository`).  &#10;- Update `pom.xml` to add Spring Boot dependencies and plugin configuration.  &#10;- Remove `ApplicationContext`, integrate Spring’s application context management.  &#10;- Adjust command classes and services to leverage Spring's DI.  &#10;- Modify `App` class for Spring Boot initialization.  &#10;- Add IntelliJ IDEA project configuration files.">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/britten/cli/F1Cli.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/britten/cli/F1Cli.java" afterDir="false" />
+    <list default="true" id="38ee6c79-f17d-4b7c-b5b5-7bb7d8b95bdc" name="Changes" comment="Annotate services, repositories, and commands with Spring DI annotations.">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laps_compare.png" beforeDir="false" afterPath="$PROJECT_DIR$/laps_compare.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/britten/cli/laps/LapsCompareCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/britten/cli/laps/LapsCompareCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/britten/repository/MeetingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/britten/repository/MeetingRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/britten/repository/jooq/JooqLapRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/britten/repository/jooq/JooqLapRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/britten/repository/jooq/JooqMeetingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/britten/repository/jooq/JooqMeetingRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/britten/repository/jooq/JooqSessionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/britten/repository/jooq/JooqSessionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/britten/repository/jooq/JooqWeatherRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/britten/repository/jooq/JooqWeatherRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/britten/service/MeetingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/britten/service/MeetingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/britten/service/SessionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/britten/service/SessionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/britten/service/WeatherDataService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/britten/service/WeatherDataService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/britten/service/laps/LapChartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/britten/service/laps/LapChartService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/britten/service/laps/LapsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/britten/service/laps/LapsService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,8 +44,8 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/lucabritten/projekt-prototype.git&quot;,
-    &quot;accountId&quot;: &quot;de15eb9a-1b78-420f-bd0f-f884ff081d32&quot;
+    &quot;url&quot;: &quot;https://github.com/lucabritten/projekt-prototype&quot;,
+    &quot;accountId&quot;: &quot;79a35fc5-fdbd-4beb-958e-e981a6654cce&quot;
   }
 }</component>
   <component name="KubernetesApiPersistence">{}</component>
@@ -52,40 +65,46 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.App (2).executor&quot;: &quot;Run&quot;,
-    &quot;Application.App.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JooqDriverRepositoryTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JooqDriverRepositoryTest.shouldSaveAndFindDriver.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JooqDriverRepositoryTest.shouldSaveMultipleDrivers.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LapsCommandTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LapsCommandTest.shouldExecuteLapsCommand.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.OpenF1ClientTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.OpenF1ClientTest.shouldReturnDriverByNumber.executor&quot;: &quot;Run&quot;,
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1&quot;: &quot;true&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.App (2).executor": "Run",
+    "Application.App.executor": "Run",
+    "JUnit.JooqDriverRepositoryTest.executor": "Run",
+    "JUnit.JooqDriverRepositoryTest.shouldSaveAndFindDriver.executor": "Run",
+    "JUnit.JooqDriverRepositoryTest.shouldSaveMultipleDrivers.executor": "Run",
+    "JUnit.LapsCommandTest.executor": "Run",
+    "JUnit.LapsCommandTest.shouldExecuteLapsCommand.executor": "Run",
+    "JUnit.OpenF1ClientTest.executor": "Run",
+    "JUnit.OpenF1ClientTest.shouldReturnDriverByNumber.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;sqlite&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlite"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.britten.App" />
@@ -177,12 +196,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="App" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="httpprac" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.britten.App" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.App" />
       <item itemvalue="JUnit.JooqDriverRepositoryTest" />
       <item itemvalue="JUnit.JooqDriverRepositoryTest.shouldSaveMultipleDrivers" />
       <item itemvalue="JUnit.LapsCommandTest" />
       <item itemvalue="JUnit.JooqDriverRepositoryTest.shouldSaveAndFindDriver" />
+      <item itemvalue="Spring Boot.App" />
     </list>
     <recent_temporary>
       <list>
@@ -197,8 +224,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.29188.11" />
-        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-IU-251.29188.11" />
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.27397.103" />
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-IU-252.27397.103" />
       </set>
     </attachedChunks>
   </component>
@@ -214,7 +241,19 @@
       <workItem from="1766581933616" duration="785000" />
       <workItem from="1766859947870" duration="25634000" />
       <workItem from="1767191046279" duration="9347000" />
+      <workItem from="1767540227268" duration="68000" />
+      <workItem from="1767540315163" duration="44000" />
+      <workItem from="1767542461442" duration="1843000" />
     </task>
+    <task id="LOCAL-00001" summary="Switch to Spring Boot DI for CLI: annotate commands/services/repos, use Picocli IFactory, and externalize DB config">
+      <option name="closed" value="true" />
+      <created>1767539695753</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1767539695753</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,6 +261,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Migrate project to Spring Boot framework:  &#10;- Replace custom dependency injection with Spring annotations (`@Component`, `@Service`, `@Repository`).  &#10;- Update `pom.xml` to add Spring Boot dependencies and plugin configuration.  &#10;- Remove `ApplicationContext`, integrate Spring’s application context management.  &#10;- Adjust command classes and services to leverage Spring's DI.  &#10;- Modify `App` class for Spring Boot initialization.  &#10;- Add IntelliJ IDEA project configuration files." />
-    <option name="LAST_COMMIT_MESSAGE" value="Migrate project to Spring Boot framework:  &#10;- Replace custom dependency injection with Spring annotations (`@Component`, `@Service`, `@Repository`).  &#10;- Update `pom.xml` to add Spring Boot dependencies and plugin configuration.  &#10;- Remove `ApplicationContext`, integrate Spring’s application context management.  &#10;- Adjust command classes and services to leverage Spring's DI.  &#10;- Modify `App` class for Spring Boot initialization.  &#10;- Add IntelliJ IDEA project configuration files." />
+    <MESSAGE value="Switch to Spring Boot DI for CLI: annotate commands/services/repos, use Picocli IFactory, and externalize DB config" />
+    <MESSAGE value="Annotate services, repositories, and commands with Spring DI annotations." />
+    <option name="LAST_COMMIT_MESSAGE" value="Annotate services, repositories, and commands with Spring DI annotations." />
   </component>
 </project>

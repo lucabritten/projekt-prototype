@@ -3,7 +3,9 @@ package com.britten.service;
 import com.britten.domain.Meeting;
 import com.britten.infrastructure.OpenF1Client;
 import com.britten.repository.MeetingRepository;
+import org.springframework.stereotype.Service;
 
+@Service
 public class MeetingService {
 
     private final MeetingRepository repository;
