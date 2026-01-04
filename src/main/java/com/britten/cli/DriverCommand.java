@@ -1,18 +1,21 @@
 package com.britten.cli;
 
-import com.britten.infrastructure.ApplicationContext;
 import com.britten.service.DriverService;
 import picocli.CommandLine;
+import org.springframework.stereotype.Component;
 
 /**
  * Jeder cmd muss einfach das Runnable Interface implementieren
  * Mit der @Command Annotation kann der Command definiert werden
  * mit @Option oder @Parameter können Optionen definiert werden
  */
+
+@Component
 @CommandLine.Command(
         name = "driver",
         description = "Show driver information"
 )
+
 public class DriverCommand implements Runnable{
 
     @CommandLine.Option(
@@ -20,8 +23,9 @@ public class DriverCommand implements Runnable{
             description = "Number of the driver",
             required = true)
     private int driverNumber;
+    private final DriverService service;
 
-    private final DriverService service = ApplicationContext.driverService();
+    public DriverCommand(DriverService service) { this.service = service; }
 
     @Override
     public void run() {

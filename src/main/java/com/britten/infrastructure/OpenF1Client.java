@@ -13,6 +13,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
+import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.util.Arrays;
@@ -23,9 +24,10 @@ import java.util.List;
  * die jsons die wir von der api bekommen werden mit jackson in die dto's umgewandelt
  * und dann in unsere Entity-Typen gemappt, kann man alles noch cleaner implementieren, aber
  * für die Demo vom prototypen sollte das passen
- * Ganz unten hab ich zwei generische methoden implementiert, mit denen man eigentlich fasst alle api requests umsetzen kann
+ * Ganz unten hab ich zwei generische methoden implementiert, mit denen man eigentlich fast alle api requests umsetzen kann
  * Einmal zum fetchen von einem "einzelnen" objekt und einmal für eine Liste
  */
+@Component
 public class OpenF1Client {
 
     private final OkHttpClient okHttpClient;

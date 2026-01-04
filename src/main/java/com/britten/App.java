@@ -1,13 +1,26 @@
 package com.britten;
 
 import com.britten.cli.F1Cli;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
 import picocli.CommandLine;
 
-public class App 
-{
-    public static void main( String[] args ) throws Exception{
-        int exitCode = new CommandLine(new F1Cli()).execute(args);
+@SpringBootApplication
+public class App {
 
-      //  System.out.println(new OpenF1Client().getLapsForSession("Singapore", 2025, 44, SessionType.RACE));
+    public static void main(String[] args) {
+
+        ApplicationContext context =
+                SpringApplication.run(App.class, args);
+
+        F1Cli rootCommand = context.getBean(F1Cli.class);
+        CommandLine.IFactory factory =
+                context.getBean(CommandLine.IFactory.class);
+
+        int exitCode =
+                new CommandLine(rootCommand, factory).execute(args);
+
+        System.exit(exitCode);
     }
 }

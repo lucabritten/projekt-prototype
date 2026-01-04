@@ -4,12 +4,14 @@ import com.britten.domain.Driver;
 import com.britten.jooq.tables.Drivers;
 import com.britten.repository.DriverRepository;
 import org.jooq.DSLContext;
+import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
 
 /**
  * Konkrete jooq implementierung des Interfaces
  */
+@Repository
 public class JooqDriverRepository implements DriverRepository {
 
     private final DSLContext dslContext;

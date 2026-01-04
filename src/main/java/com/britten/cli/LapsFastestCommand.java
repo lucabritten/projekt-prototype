@@ -4,11 +4,12 @@ import com.britten.domain.Lap;
 import com.britten.domain.SessionType;
 import com.britten.infrastructure.OpenF1Client;
 import com.britten.util.LapsFormatter;
+import org.springframework.stereotype.Component;
 import picocli.CommandLine;
 
 import java.util.Comparator;
 import java.util.List;
-
+@Component
 @CommandLine.Command(
         name = "fastest",
         description = "Show the fastest lap of a driver in a session",

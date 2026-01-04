@@ -3,13 +3,15 @@ package com.britten.service;
 import com.britten.domain.Driver;
 import com.britten.infrastructure.OpenF1Client;
 import com.britten.repository.DriverRepository;
-
+import org.springframework.stereotype.Service;
 import java.util.Optional;
+
 
 /**
  * Konkrete DriverService Klasse implementiert Abstract Service
  *
  */
+@Service
 public class DriverService extends AbstractService<Driver, Integer>{
 
     private final DriverRepository repository;

@@ -34,6 +34,7 @@ public class LapsCommandTest {
 
         ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
         System.setOut(new PrintStream(outputStream));
+        System.setErr(new PrintStream(outputStream));
 
         new CommandLine(command).execute(
                 "--year", "2025",

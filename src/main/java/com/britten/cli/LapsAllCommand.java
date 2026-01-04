@@ -4,10 +4,11 @@ import com.britten.domain.Lap;
 import com.britten.domain.SessionType;
 import com.britten.infrastructure.OpenF1Client;
 import com.britten.util.LapsFormatter;
+import org.springframework.stereotype.Component;
 import picocli.CommandLine;
 
 import java.util.List;
-
+@Component
 @CommandLine.Command(
         name = "all",
         description = "Show laps for a driver in a session"

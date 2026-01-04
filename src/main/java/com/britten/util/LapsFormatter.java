@@ -4,6 +4,8 @@ import com.britten.domain.Lap;
 
 import java.util.List;
 
+import java.util.Locale;
+
 public class LapsFormatter {
 
 
@@ -15,6 +17,7 @@ public class LapsFormatter {
 
         sb.append(BOLD)
           .append(String.format(
+                  Locale.US,
                 "%-5s | %-8s%n",
                 "Lap",
                 "Time"
@@ -25,6 +28,7 @@ public class LapsFormatter {
 
         for(Lap lap : laps) {
             sb.append(String.format(
+                    Locale.US,
                     "%-5d | %8.3f%n",
                     lap.lapNumber(),
                     lap.duration()
@@ -35,6 +39,7 @@ public class LapsFormatter {
 
     public static String formatFastestLap(Lap lap) {
         return String.format(
+                Locale.US,
                 """
                 Fastest Lap
                 ------------
